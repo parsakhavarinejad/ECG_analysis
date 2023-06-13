@@ -30,5 +30,14 @@ For more information or to access the original data sources, refer to Physionet'
 
 Disclaimer: The dataset description provided here is based on the information available and might not be exhaustive.
 
-[My LinkedIn](https://www.linkedin.com/in/parsa-khavarinejad/)
+Project's formats available
+---------------------------
+- The projects is available as a notebook file with .ipynb format
+- The project is available as .py format
+
+you can clone to this repository and pull the project in your own system.
+
+Note: Feel free to contribute to this project.
+
+Reach me at Linkedind and Instagram: [My LinkedIn Profile](https://www.linkedin.com/in/parsa-khavarinejad/) [My Instagram Profile](https://www.instagram.com/parsa_khavarinejad/)
 

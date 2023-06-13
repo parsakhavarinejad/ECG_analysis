@@ -3,16 +3,19 @@ from tensorflow.keras.utils import to_categorical
 from sklearn.metrics import classification_report, confusion_matrix
 import warnings
 warnings.filterwarnings("ignore")
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-from .data_preprocessing import Preprocessing
-from .model import ConvNet
+from data_preprocessing import Preprocessing
+from model import ConvNet
 
 
 train_path = 'data/mitbih_train.csv.csv'
 test_path = 'data/mitbih_test.csv'
 preprocessing = Preprocessing(train_path, test_path)
-new_train = preprocessing.vis()
-
+_, ecg_test = preprocessing.vis()
+new_train = preprocessing.resampling_data()
 X = new_train.iloc[:,:186]
 y = new_train.iloc[:,187]
 
@@ -63,7 +66,7 @@ plt.figure(figsize=(16, 9))
 x_axis_labels = ['Predicted normal', 'Predicted Unknown', 'Predicted Ventricular', 'Predicted Supraventricular', 'Predicted Fusion']
 y_axis_labels = ['normal', 'Unknown', 'Ventricular', 'Supraventricular', 'Fusion']
 sns.heatmap(cnf_matrix, annot=True, fmt="d", xticklabels=x_axis_labels, yticklabels=y_axis_labels)
-
+plt.show()
 
 ecg_test[187] = ecg_test[187].astype(int)
 counts = ecg_test[187].value_counts()
@@ -80,6 +83,7 @@ plt.figure(figsize=(16, 9))
 x_axis_labels = ['Predicted normal', 'Predicted Unknown', 'Predicted Ventricular', 'Predicted Supraventricular', 'Predicted Fusion']
 y_axis_labels = ['normal', 'Unknown', 'Ventricular', 'Supraventricular', 'Fusion']
 sns.heatmap(cnf_matrix, annot=True, fmt="d", xticklabels=x_axis_labels, yticklabels=y_axis_labels)
+plt.show()
 
 target_names = ['Predicted normal', 'Predicted Unknown', 'Predicted Ventricular', 'Predicted Supraventricular', 'Predicted Fusion']
 print(classification_report(y_ecg_test, prediction, target_names=target_names))
