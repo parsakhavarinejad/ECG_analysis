@@ -29,7 +29,7 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 X_train = np.expand_dims(X_train, axis=-1)
 X_test = np.expand_dims(X_test, axis=-1)
 
-history = model.fit(X_train, y_train, epochs=20, batch_size=32, validation_data=(X_test, y_test))
+history = model.fit(X_train, y_train, epochs=30, batch_size=16, validation_data=(X_test, y_test))
 
 # Evaluate the Model
 
