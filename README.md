@@ -1,4 +1,3 @@
-**This project is not finished yet**
 
 ECG Heartbeat Categorization Dataset
 ------------------------------------
