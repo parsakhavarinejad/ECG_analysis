@@ -24,20 +24,20 @@ The PTB Diagnostic ECG Database
 - Sampling Frequency: 125Hz
 - Data Source: Physionet's PTB Diagnostic Database
 
-Please note that the dataset is labeled, and each segment within it corresponds to a specific heartbeat.
+Please note that the dataset is labeled, and each segment corresponds to a specific heartbeat.
 
-For more information or to access the original data sources, refer to Physionet's MIT-BIH Arrhythmia Dataset and PTB Diagnostic Database.
+If you would like more information or to access the original data sources, you can refer to Physionet's MIT-BIH Arrhythmia Dataset and PTB Diagnostic Database.
 
 Disclaimer: The dataset description provided here is based on the information available and might not be exhaustive.
 
-Project's formats available
+Project formats are available
 ---------------------------
-- The projects is available as a notebook file with .ipynb format
-- The project is available as .py format
+- The project is available as a notebook file in .ipynb format
+- The project is available in .py format
 
-you can clone to this repository and pull the project in your own system.
+you can clone to this repository and pull the project into your own system.
 
 Note: Feel free to contribute to this project.
 
-Reach me at Linkedind and Instagram: [My LinkedIn Profile](https://www.linkedin.com/in/parsa-khavarinejad/) [My Instagram Profile](https://www.instagram.com/parsa_khavarinejad/)
+Reach me at Linkedin and Instagram: [My LinkedIn Profile](https://www.linkedin.com/in/parsa-khavarinejad/) [My Instagram Profile](https://www.instagram.com/parsa_khavarinejad/)
 
